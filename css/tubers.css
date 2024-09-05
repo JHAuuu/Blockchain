@@ -1,0 +1,46 @@
+
+.channel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.channel img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.channel-info {
+    flex-grow: 1;
+}
+
+.channel-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.channel-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.subscribe-button {
+    display: inline-block; /* Makes the link behave like a button */
+    background-color: red;
+    color: white;
+    text-align: center; /* Centers the text within the link */
+    text-decoration: none; /* Removes the underline from the link */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-button:hover {
+    background-color: #e0e0e0; /* Changes background color on hover */
+}

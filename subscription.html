@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Original Code from "https://github.com/atinder11/Youtube-Clone"-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subscriptions.css">
+    <title>Mimitube</title>
+</head>
+
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./images/menu.png" class="menu-icon" alt="" srcset="">
+            <a href="index.html"><img src="./images/logo2.png" class="logo" alt="" srcset=""></a>
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search..">
+                <img src="./images/search.png" alt="" srcset="">
+            </div>
+            <img src="./images/voice-search.png" class="mic-icon" alt="" srcset="">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="./images/upload.png" alt="" srcset="">
+            <a href="accountInfo.html"><img src="./images/more.png" alt="" srcset=""></a>
+            <img src="./images/notification.png" alt="" srcset="">
+            <img src="./images/user-profile.jpg" class="user-icon" id="user-icon" alt="" srcset="">
+            <div class="dropdown" id="dropdown">
+                <div class="dropdown-menu">
+                    <a href="#">
+                        <i class="fas fa-user"></i> Sign In
+                      </a>
+                      <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Switch account
+                      </a>
+                      <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Sign out
+                      </a>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Bar -->
+
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="index.html"><img src="./images/home.png">
+                <p>Home</p>
+            </a>
+            <a href="subscription.html"><img src="./images/subscriprion.png">
+                <p>Subscriprion</p>
+            </a>
+            <hr>
+            <a href="tubers.html"><img src="./images/library.png">
+                <p>Mimetubers</p>
+            </a>
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIPTIONS</h3>
+
+        </div>
+    </div>
+
+    <!-- Main Body -->
+    <div class="container">
+        <div>
+            <!--Place it here for the filtering-->
+            <h2>Membership</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterSelection('all')">All</button>
+                <button class="filter-btn" onclick="filterSelection('joined')">Joined</button>
+                <button class="filter-btn" onclick="filterSelection('notjoined')">Not Joined</button>
+            </div>
+        </div>
+        <div class="channel filterDiv notjoined">
+            <a href="tubersDetail.html"><img src="./images/Jack.png" alt="Hub Logo"></a>
+            <div class="channel-info">
+                <a href="tubersDetail.html"><h2>Hub</h2></a>
+                <p>@Hubslife</p>
+                <p>Normalize the Norm™ mgmt@bloketalent.com 515K ON TIKTOK: @hubs.life 950K Instagram: @hubs.life_</p>
+            </div>
+
+        </div>
+
+        <div class="channel filterDiv notjoined">
+            <img src="./images/tom.png" alt="TRADING hub Logo">
+            <div class="channel-info">
+                <h2>MR Breast</h2>
+                <p>@Breasthub</p>
+                <p>Please Read Disclaimer Carefully. Trading Hub is not a registered investment, legal or tax advisor or a broker/dealer.</p>
+            </div>
+
+        </div>
+
+        <div class="channel filterDiv joined">
+            <img src="./images/ishowspeed.jpg" alt="TRADING hub Logo">
+            <div class="channel-info">
+                <h2>iShowMeat</h2>
+                <p>@Meathub</p>
+                <p>Please Read Disclaimer Carefully. Trading Hub is not a registered investment, legal or tax advisor or a broker/dealer.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/side-bar.js"></script>
+    <script src="js/dropdown.js"></script>
+   
+    <script src="js/subscriptions.js"></script>
+   
+
+</body>
+
+</html>

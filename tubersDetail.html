@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Original Code from "https://github.com/atinder11/Youtube-Clone"-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tubersDetails.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--<link rel="stylesheet" href="plugin/bootstrap-4.0.0-dist/css/bootstrap.min.css">-->
+    <title>Mimitube</title>
+</head>
+
+<body>
+
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="./images/menu.png" class="menu-icon" alt="" srcset="">
+            <a href="index.html"><img src="./images/logo2.png" class="logo" alt="" srcset=""></a>
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search..">
+                <img src="./images/search.png" alt="" srcset="">
+            </div>
+            <img src="./images/voice-search.png" class="mic-icon" alt="" srcset="">
+        </div>
+        <div class="nav-right flex-div">
+            <img src="./images/upload.png" alt="" srcset="">
+            <a href="accountInfo.html"><img src="./images/more.png" alt="" srcset=""></a>
+            <img src="./images/notification.png" alt="" srcset="">
+            <img src="./images/user-profile.jpg" class="user-icon" id="user-icon" alt="" srcset="">
+            <div class="dropdown" id="dropdown">
+                <div class="dropdown-menu">
+                    <a href="#">
+                        <i class="fas fa-user"></i> Sign In
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Switch account
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i> Sign out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Bar -->
+
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="index.html"><img src="./images/home.png">
+                <p>Home</p>
+            </a>
+            <a href="subscription.html"><img src="./images/subscriprion.png">
+                <p>Subscriprion</p>
+            </a>
+            <hr>
+            <a href="tubers.html"><img src="./images/library.png">
+                <p>Mimetubers</p>
+            </a>
+            <hr>
+        </div>
+        <div class="subscribed-list">
+            <h3>SUBSCRIPTIONS</h3>
+
+        </div>
+    </div>
+
+    <!-- Main Body -->
+    <div class="container">
+        <div class="profile-section">
+            <img src="./images/Jack.png" alt="Channel Logo" class="profile-image">
+            <div class="profile-info">
+                <h1>Hub</h1>
+                <p>@Hubslife • 240K subscribers • 285 videos</p>
+                <p>Normalize the Norm™ ... <a href="#">more</a></p>
+                <a href="https://linktr.ee/hubslife" target="_blank" class="profile-link">linktr.ee/hubslife</a>
+                <div class="button-container">
+                    <button class="subscribe-button" id="subscribe-button">Subscribe</button>
+                    <button class="membership-button" data-toggle="modal" data-target="#exampleModalCenter">Join Membership</button>
+                  </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Membership Tiers</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="membership-tiers">
+                                <div class="tier-option" data-price="MYR 2.50/month" data-description="Basic perks with loyalty badges and custom emojis" data-benefits="🟧 🟦">
+                                    <div class="tier-name">Floor Gang - Tier 1</div>
+                                    <div class="tier-price">MYR 2.50/month</div>
+                                </div>
+                                <div class="tier-option" data-price="MYR 10.00/month" data-description="Additional perks with higher tier badges and more emojis" data-benefits="🟧 🟦 🟩">
+                                    <div class="tier-name">Floor Gang - Tier 2</div>
+                                    <div class="tier-price">MYR 10.00/month</div>
+                                </div>
+                                <div class="tier-option" data-price="MYR 30.00/month" data-description="All perks with exclusive badges and emojis" data-benefits="🟧 🟦 🟩 🟪">
+                                    <div class="tier-name">Floor Gang - Tier 3</div>
+                                    <div class="tier-price">MYR 30.00/month</div>
+                                </div>
+                            </div>
+                            <div class="tier-details">
+                                <div class="tier-price-detail" id="tierPriceDetail">MYR 2.50/month</div>
+                                <a href="#" class="btn-join">Join</a>
+                                <p class="tier-description" id="tierDescription">Basic perks with loyalty badges and custom emojis</p>
+                                <div class="tier-benefits">
+                                    <p>Loyalty badges next to your name in comments and live chat</p>
+                                    <div class="badges" id="tierBadges">🟧 🟦</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <a href="#" class="active">Home</a>
+            <a href="#">Videos</a>
+            <a href="#">Shorts</a>
+            <a href="#">Playlists</a>
+            <a href="#">Community</a>
+        </div>
+
+        <div class="video-section">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="video-info">
+                <h2>My Normal Life Part 1</h2>
+                <p>30,368 views • 8 months ago</p>
+                <p>My daily vlogs, long form style. More to come in 2024!</p>
+                <p>Like and subscribe if you want to see more of a normal guy working a normal job and living a normal
+                    life. Cheers!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/side-bar.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/membership.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="plugin/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+</body>
+
+</html>
